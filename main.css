@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/butler');
+
+.logo_design {
+    width: 3rem;
+    height: 3rem;
+}
+.hero-page-centerphoto {
+    width: 23rem;
+}
+
+.hero-page-centerphoto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -1rem;
+}
+
+.header_middle {
+    color: #916d4e;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    justify-self: center;
+    display: flex;
+    gap: 2rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: minmax(60px, auto) 1fr minmax(60px, auto);
+    align-items: center;
+    height: 70px;
+    padding: 0 clamp(5rem, 5vw, 15rem);
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header_leftside {
+    justify-self: start;
+}
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.left-design{
+    position: relative; 
+    display: flex;
+    flex-direction: row;
+    margin-left: 13rem;
+    margin-bottom: -3rem;
+    margin-top: 4rem;
+}
+
+.left-design p{
+    font-family: "Raleway", sans-serif;
+    font-size: 4rem;
+    font-style: italic;
+    background-color: #916d4e;
+    color: #ffffff;
+    display: inline-block; 
+    padding: 0.4rem 0.8rem;
+
+    position: relative; 
+    z-index: 1;
+}
+
+.middle-design h1 {
+    z-index: 1;
+    font-family: arboria, sans-serif;
+    text-align: center;
+    font-size: 6rem;
+    color: #3f3e3b;
+    margin: 0rem;
+}
+
+.middle-design{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-page-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+}
+
+.bottom-middle{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.circle-arrow {
+    position: relative;
+    width: 60px; 
+    height: 60px;
+}
+
+.circle-arrow img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-arrow .ellipse {
+    z-index: 0;
+    
+}
+
+.circle-arrow .arrow {
+    z-index: 1;
+    width: 24px; 
+}
+
+.gray-box{
+    position: absolute;
+    z-index: -2;
+    left: -4rem;     
+    top: 90%;
+    transform: translateY(-50%);
+}
+
+.wave-lines{
+    position: absolute;
+    z-index: -1;
+    left: -20rem;     
+    top: 150%;
+    transform: translateY(-50%);
+}
