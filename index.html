@@ -7,17 +7,23 @@
         <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos quia ex ab esse, recusandae voluptatibus assumenda quaerat exercitationem, dolores consectetur minus corporis explicabo ducimus ipsa. Architecto porro dignissimos perspiciatis.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- main css -->
         <link rel="stylesheet" href="main.css">
+
+        <!-- custom font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+        <!-- tailwind -->
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <script src="script.js"></script>
     </head>
 
 
 
     <body>
 
-        <section class="section">
+        <!-- <section class="section">
 
             <div id="parent">
 
@@ -28,9 +34,142 @@
 
             </div>
 
+        </section> -->
+
+
+
+
+
+
+
+
+        <section class="m-2 md:m-40">
+
+            <div class="flex flex-col gap-4 items-center md:flex-row md:justify-center">
+
+                <div class="w-80 h-80 flex items-center justify-center text-white font-bold rounded-lg bg-black">Box 1</div>
+                <div class="w-80 h-80 flex items-center justify-center text-white font-bold rounded-lg bg-black">Box 2</div>
+                <div class="w-80 h-80 flex items-center justify-center text-white font-bold rounded-lg bg-black">Box 3</div>
+                <div class="w-80 h-80 flex items-center justify-center text-white font-bold rounded-lg bg-black">Box 4</div>
+
+            </div>
+
+        </section>
+       
+
+
+
+
+
+
+
+
+
+
+
+        <section class="overflow-hidden rounded-lg border border-gray-200 shadow-md m-40">
+
+            <table class="w-full border-collapse bg-white text-left text-sm text-gray-500 font-['Montserrat']">
+    
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th scope="col" class="px-6 py-4 font-bold text-gray-900">Part Name</th>
+                        <th scope="col" class="px-6 py-4 font-bold text-gray-900">Tailwind Class</th>
+                        <th scope="col" class="px-6 py-4 font-bold text-gray-900">Description</th>
+                    </tr>
+                </thead>
+
+                <tbody class="divide-y divide-gray-100 border-t border-gray-100">
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-gray-900">Header Cell</td>
+                        <td class="px-6 py-4"><code>font-bold</code></td>
+                        <td>The <strong>&lt;th&gt;</strong> tag. It labels the column.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-gray-900">Data Cell</td>
+                        <td class="px-6 py-4"><code>px-6 py-4</code></td>
+                        <td>The <strong>&lt;td&gt;</strong> tag. The actual content.</td>
+                    </tr>
+
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-6 py-4 font-medium text-gray-900">Row Hover</td>
+                        <td class="px-6 py-4"><code>hover:bg-gray-50</code></td>
+                        <td>Changes the row background on mouse-over.</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
 
-       
+
+
+
+
+
+
+
+
+
+        <section
+        id="contact"
+        class="mb-20 py-20 container mx-auto px-6 min-h-screen flex flex-col justify-center bg-white"
+        >
+        <h2 class="text-3xl text-gray-800 font-bold text-center mb-12">
+            Contact Me
+        </h2>
+
+        <form class='w-full max-w-lg lg:max-w-xl mx-auto' id='contact-form' method='POST' name='contact'>
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="mb-6">
+            <input
+                id="form-field"
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                class="w-full px-4 py-2 border focus:outline-none focus:border-blue-500"
+                required
+            />
+            </div>
+            <div class="mb-6">
+            <input
+                id="form-field"
+                type="email"
+                name="email"
+                placeholder="Imong Email"
+                class="w-full px-4 py-2 border focus:outline-none focus:border-blue-500"
+                required
+            />
+            </div>
+            <div class="mb-6">
+            <textarea
+                id="form-field"
+                name="message"
+                rows="4"
+                placeholder="Your Message"
+                class="w-full px-4 py-2 border focus:outline-none focus:border-blue-500"
+                required
+            ></textarea>
+            </div>
+
+            <button
+            type="submit"
+            class="cta-dark w-full bg-gray-800 text-gray-200 transition duration-300 text-xs font-medium tracking-widest border border-transparent px-6 py-3 mt-4 xl:mt-28 hover:bg-white hover:text-gray-800 hover:border hover:border-gray-800 md:px-12 md:text-sm"
+            >
+            SEND MESSAGE
+            </button>
+
+        </form>
+
+        <div
+            id="form-message"
+            class="mt-6 text-sm font-medium px-4 py-2 rounded w-full max-w-lg lg:max-w-xl mx-auto h-10 opacity-0"
+            aria-hidden="true"
+        ></div>
+        </section>
+
+
 
     </body>
 </html>
